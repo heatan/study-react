@@ -8,5 +8,31 @@ Server Error
 RangeError: Maximum call stack size exceeded
 
 無限ループ
+//
+boolean
+
+=なしでtrueとなる
+//
+Unhandled Runtime Error
+Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+Check the render method of `Home`.
+
+import { Links } from "../components/Links";
+export defaultしていると{}入らない
+//
+index.js onClick={() => alert("クリック!")}
+Headline.js <button onClick={props.onClick}>ボタン</button>
+全然反映されない。
+
+半日後pc開いた続きを始めたら反映された。
+//
+Server Error
+TypeError: Cannot destructure property 'docComponentsRendered' of '(0 , _react).useContext(...)' as it is null.
+
+import { Main } from "../components/main";
+//
+
+
+
 
 
