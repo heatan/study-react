@@ -31,8 +31,7 @@ TypeError: Cannot destructure property 'docComponentsRendered' of '(0 , _react).
 
 import { Main } from "../components/main";
 //
+Unhandled Runtime Error
+TypeError: Cannot read properties of undefined (reading 'call')
 
-
-
-
-
+index.jsをcopyし、Index->Aboutに変更
