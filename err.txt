@@ -35,3 +35,29 @@ Unhandled Runtime Error
 TypeError: Cannot read properties of undefined (reading 'call')
 
 index.jsをcopyし、Index->Aboutに変更
+//
+Server Error
+RangeError: Maximum call stack size exceeded
+
+export function Header() {
+  return (
+    <Header> -><header>
+      <Link href="/">
+        <a>Index</a>
+      </Link>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+    </Header> -></header>
+  );
+}
+//
+Server Error
+Error: Invalid <Link> with <a> child. Please remove <a> or use <Link legacyBehavior>.
+Learn more: https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor
+
+<Link href="/">
+    <a>Index</a>
+</Link>
+next.js13から<a>tagなし
+//
