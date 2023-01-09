@@ -1,18 +1,15 @@
 import Image from "next/image";
-import classes from "./Main.module.css";
-import { Links } from "./Links";
-import { Headline } from "./Headline";
+import classes from "src/components/Main/Main.module.css";
+import { Links } from "src/components/Link";
+import { Headline } from "src/components/Headline";
 
 export function Main(props) {
   return (
     <>
       <main className={classes.main}>
-        <Headline
-          page={props.page}
-        >
+        <Headline page={props.page}>
           <code className={classes.code}>pages/{props.page}</code>
         </Headline>
-
         <div className={classes.center}>
           <Image
             className={classes.logo}
@@ -32,7 +29,6 @@ export function Main(props) {
             />
           </div>
         </div>
-
         <Links />
       </main>
     </>
